@@ -1,4 +1,8 @@
 DoctorsHangout::Application.routes.draw do
+  get "pages/contact_us"
+
+  get "pages/about_us"
+
   authenticated :user do
     root :to => 'home#index'
   end
